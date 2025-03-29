@@ -1,3 +1,4 @@
+import tick from "../assets/tick.png"
 export default function ClientSuccessStories() {
     const testimonials = [
       {
@@ -5,14 +6,14 @@ export default function ClientSuccessStories() {
         position: "CEO, Digital Solutions Inc",
         feedback:
           "SoftGear Technologies transformed our traditional business into a thriving online brand. We saw a significant increase in customer engagement and sales!",
-        icon: "✅",
+        icon: tick,
       },
       {
         name: "Client B",
         position: "Founder, Tech Innovations",
         feedback:
           "Their expertise in digital solutions helped us streamline our operations and expand our reach effectively.",
-        icon: "✅",
+        icon: tick,
       },
     ];
   
@@ -25,7 +26,7 @@ export default function ClientSuccessStories() {
               key={index}
               className="bg-[#1A1D21] p-6 rounded-xl shadow-lg flex flex-col text-left transition transform hover:scale-105 hover:bg-gray-800"
             >
-              <div className="text-4xl text-blue-500 mb-4">{testimonial.icon}</div>
+              <div className="text-4xl text-blue-500 mb-4"><img src={testimonial.icon} alt="" /></div>
               <p className="text-gray-300 mb-4">{testimonial.feedback}</p>
               <h3 className="text-lg font-semibold">{testimonial.name}</h3>
               <p className="text-gray-500">{testimonial.position}</p>

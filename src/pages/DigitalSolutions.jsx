@@ -1,35 +1,42 @@
+import portfolio from "../assets/portfolio_creation.png";
+import web from "../assets/web dev.png";
+import mobile from "../assets/mobile.png";
+import code from "../assets/code.png";
+import ba from "../assets/ba.png";
+import digital from "../assets/digital.png";
+
 export default function DigitalSolutions() {
     const solutions = [
       {
         title: "Portfolio Creation",
         description: "Showcase your work with stunning portfolios",
-        icon: "🎨",
+        icon: portfolio,
       },
       {
         title: "Website Development",
         description: "Custom websites that convert visitors into customers",
-        icon: "🌐",
+        icon: web,
       },
       {
         title: "Mobile Apps",
         description: "Native and cross-platform mobile applications",
-        icon: "📱",
+        icon: mobile,
       },
       {
         title: "Software Solutions",
         description: "Scalable software for business automation",
-        icon: "</>",
+        icon: code,
       },
       {
         title: "Digital Transformation",
         description: "Complete digital makeover for your business",
-        icon: "📊",
+        icon: digital,
       },
      
       {
         title: "Business Analytics",
         description: "Data-driven insights for growth",
-        icon: "📈",
+        icon: ba,
       },
     ];
   
@@ -42,9 +49,9 @@ export default function DigitalSolutions() {
           {solutions.map((solution, index) => (
             <div
               key={index}
-              className="bg-[#131619] p-6 rounded-2xl shadow-lg flex flex-col items-center text-center transition transform hover:scale-105 hover:bg-gray-700 border border-[#151]"
+              className="bg-[#131619] p-6 rounded-2xl shadow-lg flex flex-col items-center text-center transition transform hover:scale-105 hover:bg-gray-700 border border-[#1FC8D8] "
             >
-              <div className="text-4xl mb-4">{solution.icon}</div>
+              <div className="text-4xl mb-4"><img src={solution.icon} alt="" /></div>
               <h3 className="text-xl font-semibold mb-2">{solution.title}</h3>
               <p className="text-gray-300">{solution.description}</p>
             </div>
