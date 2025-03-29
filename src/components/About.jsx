@@ -2,7 +2,7 @@ import Image from '../assets/Office.jpg'
 import { FaLaptopCode, FaMobileAlt, FaServer } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Footer from './Footer';
-import Masud from '../assets/Masud.jpg'
+
 const services = [
     {
       icon: <FaLaptopCode size={30} className="text-blue-400" />,
