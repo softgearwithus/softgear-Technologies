@@ -22,7 +22,7 @@ const InternshipContact = () => {
 
     const message = `Hello, I want to apply for an internship.\n\n👤 *Name:* ${formData.fullName}\n📞 *Phone:* ${formData.phone}\n🎓 *Program:* ${formData.program}\n⏳ *Duration:* ${formData.duration}`;
     const encodedMessage = encodeURIComponent(message);
-    const phoneNumber = "919365557500"; // Change to your business number
+    const phoneNumber = "916002031116"; // Change to your business number
 
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
     setLoading(false);
