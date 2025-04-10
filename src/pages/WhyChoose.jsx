@@ -1,24 +1,29 @@
+import technology from "../assets/technology.png"
+import Customize from "../assets/coutomizes_solution.png"
+import expertise from "../assets/expertise.png"
+import support from "../assets/support.png"
+
 export default function WhyChooseSoftGear() {
     const features = [
       {
         title: "Customized Solutions",
         description: "Tailored digital solutions that fit your business needs",
-        icon: "⚡",
+        icon: Customize,
       },
       {
         title: "Professional Expertise",
         description: "Experienced team dedicated to your success",
-        icon: "👤",
+        icon: expertise,
       },
       {
         title: "Innovative Technology",
         description: "Cutting-edge technology for your business",
-        icon: "📈",
+        icon: technology,
       },
       {
         title: "Ongoing Support",
         description: "Continuous support and maintenance",
-        icon: "🔄",
+        icon: support,
       },
     ];
   
@@ -31,7 +36,7 @@ export default function WhyChooseSoftGear() {
               key={index}
               className="bg-[#131619]  text-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center transition transform hover:scale-105 border border-[#151A20]"
             >
-              <div className="text-4xl text-[#1FC8DB] mb-4">{feature.icon}</div>
+              <div className="text-4xl text-[#1FC8DB] mb-4"><img src={feature.icon} alt="" /></div>
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
               <p className="text-white">{feature.description}</p>
             </div>

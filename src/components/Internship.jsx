@@ -19,7 +19,8 @@ const Internship = () => {
         {[
           {
             title: "14 Days Training",
-            description: "Gain hands-on experience in web development, coding, and real-world projects.",
+          description: "Join our team for a 14-Day Web Development Training! Gain hands-on experience in web development , coding for beginners.",
+
             benefits: [
               "HTML, CSS, JavaScript (Basics)",
               "Portfolio Building",
@@ -39,7 +40,9 @@ const Internship = () => {
           },
           {
             title: "28 Days Training",
-            description: "Gain hands-on experience in web development, coding, and real-world projects.",
+
+            description: "Join our  28-Day Advanced Web Development Training ! Gain  in-depth coding experience , master front-end and back-end development , and work on  real-world web development projects  to build a strong portfolio.",
+
             benefits: [
               "HTML, CSS, JavaScript (Basics + Advance)",
               "3x Real projects + Portfolio Building",
@@ -59,7 +62,10 @@ const Internship = () => {
           },
           {
             title: "45 Days Training",
-            description: "Gain hands-on experience in web development, coding, and real-world projects.",
+
+            description: "Join our 45-Day Full-Stack Web Development Training ! Master front-end and back-end technologies , work on real-world web development projects , and gain expert-level coding experience  to launch your career in tech.",
+
+
             benefits: [
               "HTML, CSS, JavaScript (Basics + Advance)",
               "Portfolio Building",
@@ -88,7 +94,9 @@ const Internship = () => {
             <h2 className="text-2xl font-bold mb-4">{program.title}</h2>
 
             {/* Description */}
-            <p className="mb-4">{program.description}</p>
+
+            <p className="mb-4 text-justify">{program.description}</p>
+
 
             {/* Benefits */}
             <div className="bg-gray-100 p-4 rounded-lg mb-4">
