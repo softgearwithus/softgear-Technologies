@@ -34,7 +34,7 @@ export default function DigitalSolutions() {
       },
      
       {
-        title: "Business Analytics",
+        title: "Graphic Design",
         description: "Data-driven insights for growth",
         icon: ba,
       },
