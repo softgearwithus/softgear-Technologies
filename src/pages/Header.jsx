@@ -7,7 +7,7 @@ function Header() {
   const handleScrollToService = (e) => {
     e.preventDefault();
     document.getElementById("service-section").scrollIntoView({ behavior: "smooth" });
-    
+
   };
 
   return (
@@ -17,13 +17,13 @@ function Header() {
         {/* Left Side Content */}
         <div className='md:w-1/2 text-center md:text-left'>
           <h1 className='text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight'>
-            Empowering Your Business Digitally with SoftGear Technologies
+            Empowering businesses Digitally with Affordable Growth solutions at Softgear Technologies
           </h1>
           <p className='mt-5 text-sm sm:text-base md:text-lg max-w-lg px-2 sm:px-0 font-bold'>
-            Transforming 75 Million SMEs into Digital Success Stories
+            Best Digital solutions for Small businesses
           </p>
-          <p className='mt-4 text-sm md:text-base max-w-lg'>
-            At SoftGear Technologies, we specialize in turning businesses into brands by leveraging the power of digitalization. Our mission is to empower 75 million SMEs by creating stunning websites, innovative apps, and robust software solutions.
+          <p className='mt-4 text-sm md:text-base max-w-lg text-justify'>
+            At SoftGear Technologies, we specialize in turning businesses into brands by leveraging the power of digitalization. Our mission is to empower 75 million SMEs by creating stunning websites, innovative apps, and robust software solutions.Transform your business Digitally and reach more Customers today.
           </p>
           <button className='bg-red-400 px-5 py-3 rounded mt-6 sm:mt-5 hover:bg-blue-800 transition-all text-sm sm:text-base'>
             <Link to='/get-started' onClick={handleScrollToService} >Start Your Digital Journey</Link>
