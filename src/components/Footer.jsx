@@ -1,4 +1,8 @@
 import Logo from "../assets/logo.png"
+import { FaLinkedin } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaSquareThreads } from "react-icons/fa6";
 export default function Footer() {
     return (
       <footer className="bg-[#0C0F12] py-10 text-gray-400 border-t border-gray-700">
@@ -9,10 +13,20 @@ export default function Footer() {
             </h3>
             <p className="mt-2">Transforming businesses through digital innovation</p>
             <div className="flex gap-4 mt-4">
-              <a href="#" className="hover:text-white">🔗</a>
-              <a href="#" className="hover:text-white">🐦</a>
-              <a href="#" className="hover:text-white">📸</a>
-              <a href="#" className="hover:text-white">💻</a>
+            <a
+  href="https://www.linkedin.com/company/softgear-technologies/posts/?feedView=all"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hover:text-white"
+>
+  <FaLinkedin />
+</a>
+
+             
+              <a href="https://x.com/Softgear_Groups" target="_blank" rel="noopener noreferrer" className="hover:text-white"><FaSquareXTwitter />
+              </a>
+              <a href="https://www.instagram.com/qwiksnow/" target="_blank" rel="noopener noreferrer" className="hover:text-white"><FaInstagramSquare /></a>
+              <a href="#" className="hover:text-white"><FaSquareThreads /></a>
             </div>
           </div>
           <div className="mt-6 md:mt-0">

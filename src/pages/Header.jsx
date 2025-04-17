@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaCogs, FaUserTie, FaRocket, FaShieldAlt } from 'react-icons/fa';
-import headerImage from '../assets/header-Image.jpg'; // Replace with actual image path
+import headerImage from "../assets/header-image.jpg"
+
 
 function Header() {
   const handleScrollToService = (e) => {
