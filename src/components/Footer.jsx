@@ -39,10 +39,7 @@ export default function Footer() {
               className="hover:text-white"
             >
               <FaInstagramSquare />
-            </a>
-            <a href="#" className="hover:text-white">
-              <FaSquareThreads />
-            </a>
+            </a>         
           </div>
         </div>
         <div className="mt-6 md:mt-0">
