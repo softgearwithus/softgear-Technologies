@@ -6,6 +6,7 @@ import Layout from "./Layout";
 import About from "./components/About";
 import Internship from "./components/Internship";
 import InternshipContact from "./pages/InternshipContact";
+import Blogs from "./pages/Blog";
 function App() {
   return <>
    <BrowserRouter>
@@ -15,6 +16,7 @@ function App() {
           <Route path="/about" element={<About/>}/>
           <Route path="/internship" element={<Internship/>}/>
           <Route path="/intern-contactForm" element={<InternshipContact/>}/>
+          <Route path="/blogs" element={<Blogs/>}/>
           <Route path="*" element={<NoPage/>} />
         </Route>
       </Routes>
