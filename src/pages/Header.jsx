@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaCogs, FaUserTie, FaRocket, FaShieldAlt } from 'react-icons/fa';
-import headerImage from "../assets/header-image.jpg"
+import headerImage from "../assets/hero-image.png"
+import { motion } from 'framer-motion';
 
 
 function Header() {
@@ -14,28 +15,30 @@ function Header() {
   return (
     <>
       {/* Header Section */}
-      <div className='flex flex-col md:flex-row items-center bg-[#0C0F12] text-white px-6 md:px-12 py-10 pt-24'>
-        {/* Left Side Content */}
-        <div className='md:w-1/2 text-center md:text-left'>
-          <h1 className='text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight'>
-            Empowering businesses Digitally with Affordable Growth solutions at Softgear Technologies
-          </h1>
-          <p className='mt-5 text-sm sm:text-base md:text-lg max-w-lg px-2 sm:px-0 font-bold'>
-            Best Digital solutions for Small businesses
-          </p>
-          <p className='mt-4 text-sm md:text-base max-w-lg text-justify'>
-            At SoftGear Technologies, we specialize in turning businesses into brands by leveraging the power of digitalization. Our mission is to empower 75 million SMEs by creating stunning websites, innovative apps, and robust software solutions.Transform your business Digitally and reach more Customers today.
-          </p>
-          <button className='bg-red-400 px-5 py-3 rounded mt-6 sm:mt-5 hover:bg-blue-800 transition-all text-sm sm:text-base'>
-            <Link to='/get-started' onClick={handleScrollToService} >Start Your Digital Journey</Link>
-          </button>
-        </div>
+     {/* Ring Image with Animated Text on Top */}
+{/* Ring Image with Animated Text on Top */}
+<div className=" relative w-4/5 md:w-3/4 lg:w-2/3 max-w-[700px] mb-6">
+  <motion.img
+    src={headerImage}
+    alt="Ring"
+    initial={{ opacity: 0, y: 100 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1, ease: "easeOut" }}
+    className="w-full"
+  />
 
-        {/* Right Side Image */}
-        <div className='md:w-1/2 flex justify-center mt-6 md:mt-0'>
-          <img src={headerImage} alt='SoftGear Technologies' className='w-full max-w-sm sm:max-w-md md:max-w-lg rounded' />
-        </div>
-      </div>
+  {/* Centered Text Over Image with White and Blue Colors */}
+  <motion.h1
+    initial={{ opacity: 0, y: 60 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+    className="absolute inset-0 flex items-center justify-center text-center text-white text-2xl sm:text-4xl md:text-5xl font-bold leading-tight px-4"
+  >
+    QUALITY PRODUCTS <br />
+    <span className="text-blue-700">FOR QUALITY LIFE.</span>
+  </motion.h1>
+</div>
+
 
       {/* Stats & Features Section */}
       <div className='bg-[#0C0F12] text-white px-6 md:px-12 py-10 flex flex-col md:flex-row items-center justify-center text-center md:text-left'>
