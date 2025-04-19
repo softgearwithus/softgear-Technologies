@@ -17,7 +17,7 @@ function Header() {
       {/* Header Section */}
      {/* Ring Image with Animated Text on Top */}
 {/* Ring Image with Animated Text on Top */}
-<div className=" relative w-4/5 md:w-3/4 lg:w-2/3 max-w-[700px] mb-6">
+<div className=" bg-[#06002e] relative w-4/5 md:w-3/4 lg:w-2/3 max-w-[700px] mb-6">
   <motion.img
     src={headerImage}
     alt="Ring"
